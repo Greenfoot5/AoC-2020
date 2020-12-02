@@ -1,8 +1,11 @@
+# Load the input from file
 with open("input.txt", 'r') as f:
+    # Break up the fine
     contents = repr(f.read())
-
+    # Random `'` at the start and end
     numbers = contents[1:-1].split("\\n")
-    print(numbers)
+
+    # Turn into ints
     for i in range(len(numbers)):
         numbers[i] = int(numbers[i])
 
